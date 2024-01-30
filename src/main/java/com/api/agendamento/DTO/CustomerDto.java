@@ -5,7 +5,7 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.br.CPF;
 
-import com.api.agendamento.anotations.Telefone;
+//import com.api.agendamento.anotations.Telefone;
 
 public class CustomerDto {
   
@@ -17,8 +17,7 @@ public class CustomerDto {
 	@CPF(message = "Este CPF informado é inválido")
 	private String cpf;
 	
-	@NotBlank(message = "O campo telefone não pode ser vazio")	
-	@Telefone
+	@NotBlank(message = "O campo telefone não pode ser vazio")		
 	private String telefone;
 	
 	

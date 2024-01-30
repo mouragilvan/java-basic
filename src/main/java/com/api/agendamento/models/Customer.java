@@ -18,10 +18,10 @@ public class Customer implements Serializable {
 	@Column(nullable = false, unique = false, length = 30)
 	private String nome;
 
-	@Column(nullable = false, unique = true, length = 11)
+	@Column(nullable = false, unique = true, length = 15)
 	private String cpf;
 	
-	@Column(nullable = true, unique = false, length = 11)
+	@Column(nullable = true, unique = false, length = 15)
 	private String telefone;
 
 	public String getTelefone() {
