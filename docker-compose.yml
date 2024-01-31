@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  oracle:
+    container_name: oracle
+    image: 'gvenzl/oracle-xe:latest'
+    environment:
+      ORACLE_RANDOM_PASSWORD: "yes"
+      APP_USER: userapp
+      APP_USER_PASSWORD: P@ssword
+    ports:
+      - '1521:1521'
+  web:
+    container_name: app
+    build: 
+     context: ./
+     dockerfile: web.Dockerfile
+    depends_on: [oracle]
