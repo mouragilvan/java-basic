@@ -1,12 +1,6 @@
 ## Instruções para rodar a aplicação no Docker
 ##### Logo logo vou colocar o docker-compose.yml pra funcionar, mas por enquanto, divirtam-se fazendo rodar o projeto no Docker com os passos a seguir!
 
-### Acesse o link abaixo para ouvir a canção Wanna Be Happy (Kirk franklin) enquanto realiza o procedimento
-
-
-<a href="https://www.youtube.com/watch?v=0mo8OxWgk8k" target="_blank">
-  <img src="https://i.ytimg.com/vi/0mo8OxWgk8k/maxresdefault.jpg" alt="Assista ao Vídeo" style="height: 200px">
-</a>
 
 ### Crie uma network
 ```
