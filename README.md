@@ -3,8 +3,9 @@
 
 ### Acesse o link abaixo para ouvir a canção Wanna Be Happy (Kirk franklin) enquanto realiza o procedimento
 
+
 <a href="https://www.youtube.com/watch?v=0mo8OxWgk8k" target="_blank">
-  <img src="https://i.ytimg.com/vi/0mo8OxWgk8k/maxresdefault.jpg" alt="Assista ao Vídeo">
+  <img src="https://i.ytimg.com/vi/0mo8OxWgk8k/maxresdefault.jpg" alt="Assista ao Vídeo" style="height: 200px">
 </a>
 
 ### Crie uma network
