@@ -1,17 +1,14 @@
-version: "3.1"
-
+version: '3.7'
 services:
-
-  db:
-    image: postgres:14.2-alpine
-    restart: always
-    container_name: postgresql
-    volumes:
-      - ./data:/var/lib/postgresql
+  oracle:
+    image: 'gvenzl/oracle-xe:latest'
     environment:
-      POSTGRES_PASSWORD: g1lv@n
-      POSTGRES_USER: gilvan
-      POSTGRES_DB: agendamento
-      
+      ORACLE_RANDOM_PASSWORD: "yes"
+      APP_USER: userapp
+      APP_USER_PASSWORD: P@ssword
     ports:
-      - "5432:5432"
+      - '1521:1521'
+  web:
+    build: 
+     context: ./
+     dockerfile: web.Dockerfile
