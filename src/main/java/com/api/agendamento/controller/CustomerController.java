@@ -39,10 +39,7 @@ public class CustomerController {
 	@PostMapping
 	public ResponseEntity<Object> saveCustomer(@RequestBody @Valid CustomerDto customerDto, Errors errors) {
 
-		if (this.customerService.existsByCpf(customerDto.getCpf())) {
-			return ResponseEntity.status(HttpStatus.CONFLICT).body("Este CPF já é usado por um cliente");
-		}
-
+		
 		if (errors.hasErrors()) {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errors.getAllErrors());
 		}
